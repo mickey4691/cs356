@@ -1,0 +1,25 @@
+# Example Master File for DNS Programming Assignment
+# dns-master.txt
+
+# First, specify the domain  that this name server is authoritative for
+student.test
+
+# Next,  an integer specifies TTL to be used for all resource records (secs)
+120
+
+# List the hostnames of all name servers that are authoritative for domain “student.test”  using NS resource records
+student.test.			NS		ns1.student.test
+student.test.			NS		ns2.student.test
+
+# List IP address for each of above name servers using A resource records
+ns1.student.test		A		127.0.0.1
+ns2.student.test		A		192.168.10.11
+
+# List IP addresses of all hosts in the domain and sub-domains
+host1.student.test		A		192.168.20.1
+host2.student.test		A		192.168.20.2
+host3.student.test		A		192.168.20.3
+host11.student.test		CNAME	        host1.student.test
+
+host20.cs.student.test	A		192.168.30.1
+host21.ee.student.test	A		192.168.40.1
