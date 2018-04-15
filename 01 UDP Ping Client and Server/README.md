@@ -1,5 +1,7 @@
 Name:  Mickey P. Somra
+
 Programming language and version: Python (version 3.6.4)
+
 Testing environment:
 	OS: Windows 7 Professional
 	IDE with entrance file:  Python 3.6.4 (Run Module – F5)		
